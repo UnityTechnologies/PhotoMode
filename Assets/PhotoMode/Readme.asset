@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 77b79e3c07b853446ad649ecf48038f5, type: 3}
+  title: Photo Mode Demo Package
+  sections:
+  - heading: 
+    text: 
+    linkText: 
+    url: 
+  - heading: 'A virtual photography system for creating in-game screenshots. '
+    text: 'Package updates and documentation can be found below:'
+    linkText: PHOTO MODE ON GITHUB
+    url: https://github.com/UnityTechnologies/PhotoMode
+  - heading: ' '
+    text: 
+    linkText: 
+    url: 
+  - heading: Requirements
+    text: "\u2022 This package requires Unity version 2020.3 LTS or higher, along
+      with the Universal Render Pipeline."
+    linkText: 
+    url: 
+  - heading: 
+    text: "\u2022 Package Dependencies: Cinemachine v2.6.5 +, Input System v1.0.2
+      +, TextMeshPro v3.0.6 +"
+    linkText: 
+    url: 
+  - heading: 
+    text: "\u2022 A scene containing a Cinemachine Brain and Virtual Camera (set
+      to your preference)"
+    linkText: 
+    url: 
+  - heading: ' '
+    text: 
+    linkText: 
+    url: 
+  - heading: Setup Guide
+    text: 1) Open a Unity project with the requirements listed above. Ensure all
+      required packages are added before importing Photo Mode and that your scene
+      with the Cinemachine Brain and Virtual Camera is open.
+    linkText: 
+    url: 
+  - heading: 
+    text: '2) Import the Photo Mode package into your project by navigating to Assets
+      > Import Package > Custom Package. '
+    linkText: 
+    url: 
+  - heading: 
+    text: "3) In your Project window, locate the \u201CPhotoMode\u201D prefab within
+      PhotoMode > Prefabs and drag it into your scene."
+    linkText: 
+    url: 
+  - heading: 
+    text: "4) Select your scene\u2019s newly added PhotoMode prefab and use the Inspector
+      to assign your Player object (or other object you want Photo Mode to focus
+      on) to the \u201CPlayer Object\u201D field within the Photo Mode script component."
+    linkText: 
+    url: 
+  - heading: 
+    text: "5) Within the Project window, select your project\u2019s main Renderer
+      asset (usually listed as \u201CForward Renderer\u201D). Go to the asset\u2019s
+      settings within the Inspector window and add a Blit Render Feature to the asset
+      by selecting Add Renderer Feature > Blit."
+    linkText: 
+    url: 
+  - heading: 
+    text: "6) The Render Feature you just created contains a field called \u201CBlit
+      Material.\u201D Set its target to be the material called \u201CBlitMaterial\u201D
+      located within the PhotoMode > Materials folder."
+    linkText: 
+    url: 
+  - heading: 
+    text: "7) Select the \u201CPhotoMode\u201D prefab in your scene and locate the
+      \u201CBlit\u201D field within its \u201CPhoto Mode\u201D script component.
+      Ensure that field is populated with the Blit you just added to the Renderer."
+    linkText: 
+    url: 
+  - heading: 
+    text: "8) Enter Play mode to test Photo Mode. By default, Photo Mode can be activated
+      by pressing \u201CP\u201D on a keyboard or \u201CSELECT\u201D on a gamepad."
+    linkText: 
+    url: 
+  - heading: ' '
+    text: 
+    linkText: 
+    url: 
+  - heading: Saving Screenshots
+    text: "Once you apply your desired effects with Photo Mode, use the Hide UI option
+      to see an unobstructed view of your creation. You can then save it as an image
+      using your device\u2019s native Share or Screenshot button. "
+    linkText: 
+    url: 
+  - heading: ' '
+    text: 
+    linkText: 
+    url: 
+  - heading: Customization Notes
+    text: "Photo Mode contains a Volume with post-processing effects that may override
+      your existing Volume\u2019s Depth of Field or Color Adjustments settings. You
+      can update Photo Mode to work with your Volume\u2019s values by following these
+      two steps:"
+    linkText: 
+    url: 
+  - heading: 
+    text: "\u2022 In the Hierarchy, select the PhotoMode_Volumes child object of
+      the Photo Mode prefab. Change any conflicting values within its Depth of Field
+      or Color Adjustments settings to match what you have in your original Volume.
+      Also, make sure the PhotoMode_Volumes priority is set to a higher value than
+      your original Volume."
+    linkText: 
+    url: 
+  - heading: 
+    text: "\u2022 On the main PhotoMode prefab object, update the Min/Max fields
+      for the corresponding settings within the Photo Mode script component. The
+      value of each slider in Photo Mode defaults to the average between its corresponding
+      Min & Max values. Set your Min/Max range to have an average that matches the
+      value of the setting in your post-processing Volume. For example, if the value
+      you want to use for Post Exposure is 1.5, the Min/Max range for it could be
+      -0.5/3.5."
+    linkText: 
+    url: 
+  - heading: 
+    text: "If you\u2019d like to enable Photo Mode using a different input, UI event,
+      or other custom setup, be sure to turn off the Pause Action Activation checkbox
+      within the Photo Mode Pauser script component on the main PhotoMode prefab
+      object. Once turned off, Photo Mode will no longer open when pressing the default
+      \u201CP\u201D key so you can integrate Photo Mode into your preferred setup."
+    linkText: 
+    url: 
+  loadedLayout: 1
