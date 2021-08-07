@@ -55,17 +55,16 @@ Once you apply your desired effects with Photo Mode, use the Hide UI option to s
 
 ## Customization Notes
 
-
-Photo Mode contains a Volume with post-processing effects that may override your existing Volume’s Depth of Field or Color Adjustments settings. You can update Photo Mode to work with your Volume’s values by following these two steps:
-
-
-- In the Hierarchy, select the PhotoMode_Volumes child object of the Photo Mode prefab. Change any conflicting values within its Depth of Field or Color Adjustments settings to match what you have in your original Volume. Also, make sure the PhotoMode_Volumes priority is set to a higher value than your original Volume.
+- You can adjust the range for standard sliders — such as View Roll, Exposure, and Vignette — by changing their corresponding Min & Max values within the Photo Mode script component on the main PhotoMode prefab object: <br><br><img src="https://user-images.githubusercontent.com/7104693/128586864-64a1d63b-5cef-4ad8-ae3e-5cc442acc3a4.png" width="50%"> <br><br>Options and values for the text-based sliders can be changed via the Text Slider component within the corresponding feature’s Slider object:  <br><br><img src="https://user-images.githubusercontent.com/7104693/128586931-bf39069f-a13d-4de2-908e-c3d766f85ad3.png" width="50%"> <br><br>The value of each slider in Photo Mode defaults to the average between its corresponding Min & Max values. For example, if the default value you want for Post Exposure is 1.5, the Min/Max range for it could be -0.5/3.5. <br><br>  <br>
 
 
-- On the main PhotoMode prefab object, update the Min/Max fields for the corresponding settings within the Photo Mode script component. The value of each slider in Photo Mode defaults to the average between its corresponding Min & Max values. Set your Min/Max range to have an average that matches the value of the setting in your post-processing Volume. For example, if the value you want to use for Post Exposure is 1.5, the Min/Max range for it could be -0.5/3.5.
+
+- Photo Mode contains a Volume with post-processing effects that may override your existing Volume’s Depth of Field or Color Adjustments settings. You can update Photo Mode to work with your Volume’s values by following these two steps:
+  - In the Hierarchy, select the PhotoMode_Volumes child object of the Photo Mode prefab. Change any conflicting values within its Depth of Field or Color Adjustments settings to match what you have in your original Volume. Also, make sure the PhotoMode_Volumes priority is set to a higher value than your original Volume. <br>
+  - On the main PhotoMode prefab object, update the Min/Max ranges for the corresponding settings within the Photo Mode script component. Since the value of each slider defaults to the average between its Min & Max values, be sure to set the ranges to have an average that matches the value of the respective setting in your post-processing Volume. <br><br><br>
 
 
-If you’d like to enable Photo Mode using a different input, UI event, or other custom setup, be sure to turn off the Pause Action Activation checkbox within the Photo Mode Pauser script component on the main PhotoMode prefab object. Once turned off, Photo Mode will no longer open when pressing the default “P” key so you can integrate Photo Mode into your preferred setup.
+- If you’d like to enable Photo Mode using a different input, UI event, or other custom setup, be sure to turn off the Pause Action Activation checkbox within the Photo Mode Pauser script component on the main PhotoMode prefab object. Once turned off, Photo Mode will no longer open when pressing the default “P” key so you can integrate Photo Mode into your preferred setup.
 
 <br> 
 
