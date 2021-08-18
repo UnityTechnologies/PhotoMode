@@ -28,6 +28,8 @@ Photo Mode comes with the following features: View Roll, View Distance, Focus Di
 
 ## Setup
 
+Context for these steps can be viewed in our [Photo Mode Overview Video](https://youtu.be/GEPJZwFt2DM).
+
 0. &nbsp;Download the Photo Mode package from this repo’s Releases page.
 
 0. &nbsp;Open a Unity project with the requirements listed above. Ensure all required packages are added before importing Photo Mode and that your scene with the Cinemachine Brain and Virtual Camera is open.
@@ -70,6 +72,6 @@ Once you apply your desired effects with Photo Mode, use the Hide UI option to s
 
 ## Resources
 Here are some links to helpful context regarding the Photo Mode Demo Package:
-- Overview Video (LINK TBA)
+- [Photo Mode Overview Video](https://youtu.be/GEPJZwFt2DM)
 - Blog Post (LINK TBA)
 - Forum Thread (LINK TBA)
