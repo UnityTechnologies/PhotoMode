@@ -9,7 +9,7 @@ The primary Unity features used in this package include the Universal Render Pip
 Photo Mode comes with the following features: View Roll, View Distance, Focus Distance, Aperture, Exposure, Contrast, Saturation, Vignette, Filters, Frames, Stickers, Camera Height, Camera Rotation, Rule of Thirds Grid, & Hide UI. 
 
 <p align="center"> 
-  <img src="https://user-images.githubusercontent.com/7104693/128102608-fb4c8072-e63b-4133-bff2-4574737ab586.png" width="48%" />
+  <img src="https://user-images.githubusercontent.com/67757696/130872485-f46baabd-bae0-4bfa-b7c8-afed790c2b94.png" width="48%" />
   &nbsp;&nbsp;
   <img src="https://user-images.githubusercontent.com/7104693/128102643-6964ab3b-208d-4f3e-9867-c8ca025c68ed.png" width="48%" />
 </p>
