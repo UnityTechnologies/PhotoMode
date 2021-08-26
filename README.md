@@ -73,5 +73,5 @@ Once you apply your desired effects with Photo Mode, use the Hide UI option to s
 ## Resources
 Here are some links to helpful context regarding the Photo Mode Demo Package:
 - [Photo Mode Overview Video](https://youtu.be/GEPJZwFt2DM)
-- Blog Post (LINK TBA)
-- Forum Thread (LINK TBA)
+- [Blog Post](https://on.unity.com/3kqi8m2)
+- [Forum Thread](https://on.unity.com/3BfRFyd)
