@@ -4,7 +4,7 @@ using PhotoMode;
 
 namespace PhotoMode
 {
-
+#if UNITY_EDITOR
     // IngredientDrawer
     [CustomPropertyDrawer(typeof(MinMax))]
     public class MinMaxDrawer : PropertyDrawer
@@ -44,4 +44,5 @@ namespace PhotoMode
             EditorGUI.EndProperty();
         }
     }
+#endif
 }
