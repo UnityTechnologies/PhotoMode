@@ -46,6 +46,8 @@ Context for these steps can be viewed in our [Photo Mode Overview Video](https:/
 
 0. &nbsp;Select the “PhotoMode” prefab in your scene and locate the “Blit” field within its “Photo Mode” script component. Ensure that field is populated with the Blit you just added to the Renderer.
 
+0. &nbsp;Open your Project Settings, navigate to the Input System Package settings, and ensure the Update Mode is set to "Process Events in Dynamic Update."
+
 0. &nbsp;Enter Play mode to test Photo Mode. By default, Photo Mode can be activated by pressing “P” on a keyboard or “SELECT” on a gamepad.
 
 <br>
